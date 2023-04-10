@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [orangehrm.qedgetech.com]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Admin Login TestCase Invalid Inputs(failed)">
+    <parameter name="adminpwd" value="xyz"/>
+    <parameter name="adminuid" value="abc"/>
+    <classes>
+      <class name="Orangehrmtestcases.AdminLoginTestwithInvalidData">
+        <methods>
+          <include name="checkAdminLogin" invocation-numbers="0"/>
+          <include name="closeapp"/>
+          <include name="LaunchApp"/>
+        </methods>
+      </class> <!-- Orangehrmtestcases.AdminLoginTestwithInvalidData -->
+    </classes>
+  </test> <!-- Admin Login TestCase Invalid Inputs(failed) -->
+</suite> <!-- Failed suite [orangehrm.qedgetech.com] -->

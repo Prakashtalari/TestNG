@@ -1,0 +1,22 @@
+  
+  <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  <suite  name = "orangehrm.qedgetech.com"> 
+	  
+ 
+	<test name = "Admin Login TestCase Valid Inputs">
+	 <parameter name = "adminuid" value = "Admin"></parameter>
+	<parameter name = "adminpwd" value = "Qedge123!@#"></parameter>
+	<classes>
+		<class name = "Orangehrmtestcases.CheckAdminLoginWithVaildData"></class>
+	</classes>
+	</test>  
+	
+	
+		<test name = "Admin Login TestCase Invalid Inputs">
+	<parameter name = "adminuid" value = "abc"></parameter>
+	<parameter name = "adminpwd" value = "xyz"></parameter>
+	<classes>
+		<class name ="Orangehrmtestcases.AdminLoginTestwithInvalidData"></class>
+	</classes>
+	</test> 
+	</suite>
